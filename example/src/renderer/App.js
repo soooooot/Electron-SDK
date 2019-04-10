@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AgoraRtcEngine from '../../../';
 import { List } from 'immutable';
+import os from 'os'
 import path from 'path';
 
 import {videoProfileList, audioProfileList, audioScenarioList, APP_ID, SHARE_ID } from '../utils/settings'
@@ -96,26 +97,47 @@ export default class App extends Component {
   }
 
   handleJoin = () => {
-    let encoderWidth = parseInt(this.state.encoderWidth)
-    let encoderHeight = parseInt(this.state.encoderHeight)
-    let rtcEngine = this.rtcEngine
-    rtcEngine.setChannelProfile(1)
-    rtcEngine.setClientRole(this.state.role)
-    rtcEngine.setAudioProfile(0, 1)
-    rtcEngine.enableVideo()
-    rtcEngine.setLogFile('~/agora.log')
-    rtcEngine.enableLocalVideo(true)
-    rtcEngine.enableWebSdkInteroperability(true)
-    if(encoderWidth === 0 && encoderHeight === 0) {
-      //use video profile
-      rtcEngine.setVideoProfile(this.state.videoProfile, false)
+    let rtcengine = this.rtcEngine
+
+    let homedir = os.homedir()
+    let logpath = path.resolve(homedir, "./hh.log")
+    rtcengine.setLogFile(logpath)
+    if(this.state.role === 2) {
+      rtcengine.setChannelProfile(0); // 0: 通信模式, 1: 直播模式
+      rtcengine.setClientRole(1); //设置主播角色
+      rtcengine.setParameters('{"che.audio.live_for_comm":true}');
+      rtcengine.setParameters('{"che.audio.enable.agc":false}');
+      rtcengine.setParameters('{"che.video.moreFecSchemeEnable":true}');
+      rtcengine.setParameters('{"rtc.force_unified_communication_mode":true}');
+      rtcengine.setParameters(
+          '{"che.video.lowBitRateStreamParameter":{"width":192,"height":108,"frameRate":15,"bitRate":100}}'
+      );
+      rtcengine.enableDualStreamMode(false);
+      rtcengine.enableVideo();
+      rtcengine.enableLocalVideo(true);
+      rtcengine.setAudioProfile(0, 2);
+      rtcengine.enableAudioVolumeIndication(150, 5);
+      rtcengine.enableWebSdkInteroperability(true);
+      rtcengine.setVideoProfile(40, false);
+
+      rtcengine.joinChannel(null, this.state.channel, '', 0);
     } else {
-      rtcEngine.setVideoEncoderConfiguration({width: encoderWidth, height: encoderHeight})
+      rtcengine.setChannelProfile(0); // CHANNEL_PROFILE_COMMUNICATION
+      rtcengine.setClientRole(1);
+      rtcengine.setParameters('{"che.audio.live_for_comm":true}');
+      rtcengine.setParameters(`{"che.audio.enable.agc":${true}}`);
+      rtcengine.setParameters(`{"che.audio.agcOn":${true}}`);
+      rtcengine.setParameters('{"che.video.moreFecSchemeEnable":true}');
+      rtcengine.enableDualStreamMode(false);
+      rtcengine.enableVideo();
+      rtcengine.enableLocalVideo(true);
+      rtcengine.setAudioProfile(0, 2);
+      rtcengine.enableAudioVolumeIndication(150, 5);
+      rtcengine.enableWebSdkInteroperability(true);
+      rtcengine.setParameters(`{"che.audio.enable.aec":false}`);
+      rtcengine.setVideoProfile(36, false);
+      rtcengine.joinChannel(null, this.state.channel, '', 0);
     }
-    console.log('loop', rtcEngine.enableLoopbackRecording(true, null))
-    rtcEngine.enableDualStreamMode(true)
-    rtcEngine.enableAudioVolumeIndication(1000, 3)
-    rtcEngine.joinChannel(null, this.state.channel, '',  Number(`${new Date().getTime()}`.slice(7)))
   }
 
   handleCameraChange = e => {
@@ -291,40 +313,8 @@ export default class App extends Component {
             <div className="control">
               <div className="select"  style={{width: '100%'}}>
                 <select onChange={e => this.setState({role: Number(e.currentTarget.value)})} value={this.state.role} style={{width: '100%'}}>
-                  <option value={1}>Anchor</option>
-                  <option value={2}>Audience</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div className="field">
-            <label className="label">Video Encoder Configuration</label>
-            <div className="control">
-              <input onChange={e => this.setState({encoderWidth: e.currentTarget.value})} value={this.state.encoderWidth} className="input" type="number" placeholder="Encoder Width" />
-              <input onChange={e => this.setState({encoderHeight: e.currentTarget.value})} value={this.state.encoderHeight} className="input" type="number" placeholder="Encoder Height" />
-            </div>
-          </div>
-          <div className="field">
-            <label className="label">VideoProfile</label>
-            <div className="control">
-              <div className="select"  style={{width: '100%'}}>
-                <select onChange={this.handleVideoProfile} value={this.state.videoProfile} style={{width: '100%'}}>
-                  {videoProfileList.map(item => (<option key={item.value} value={item.value}>{item.label}</option>))}
-                </select>
-              </div>
-            </div>
-          </div>
-          <div className="field">
-            <label className="label">AudioProfile</label>
-            <div className="control">
-              <div className="select"  style={{width: '50%'}}>
-                <select onChange={this.handleAudioProfile} value={this.state.audioProfile} style={{width: '100%'}}>
-                  {audioProfileList.map(item => (<option key={item.value} value={item.value}>{item.label}</option>))}
-                </select>
-              </div>
-              <div className="select"  style={{width: '50%'}}>
-                <select onChange={this.handleAudioScenario} value={this.state.audioScenario} style={{width: '100%'}}>
-                  {audioScenarioList.map(item => (<option key={item.value} value={item.value}>{item.label}</option>))}
+                  <option value={1}>Teacher</option>
+                  <option value={2}>Student</option>
                 </select>
               </div>
             </div>
@@ -370,25 +360,6 @@ export default class App extends Component {
             </div>
           </div>
           <hr/>
-          <div className="field">
-            <label className="label">Screen Share</label>
-            <div className="control">
-              <button onClick={this.handleScreenSharing} className="button is-link">Screen Share</button>
-            </div>
-          </div>
-
-          <div className="field">
-            <label className="label">Audio Playback Test</label>
-            <div className="control">
-              <button onClick={this.togglePlaybackTest} className="button is-link">{this.state.playbackTestOn ? 'stop' : 'start'}</button>
-            </div>
-          </div>
-          <div className="field">
-            <label className="label">Audio Recording Test</label>
-            <div className="control">
-              <button onClick={this.toggleRecordingTest} className="button is-link">{this.state.recordingTestOn ? 'stop' : 'start'}</button>
-            </div>
-          </div>
         </div>
         <div className="column is-three-quarters window-container">
           {this.state.users.map((item, key) => (
