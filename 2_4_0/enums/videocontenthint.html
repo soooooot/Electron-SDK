@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LocalVideoStats | Agora-Electron-SDK</title>
+	<title>VideoContentHint | Agora-Electron-SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,57 +56,60 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="localvideostats.html">LocalVideoStats</a>
+					<a href="videocontenthint.html">VideoContentHint</a>
 				</li>
 			</ul>
-			<h1>Interface LocalVideoStats</h1>
+			<h1>Enumeration VideoContentHint</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">LocalVideoStats</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#sentbitrate" class="tsd-kind-icon">sent<wbr>Bitrate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#sentframerate" class="tsd-kind-icon">sent<wbr>Frame<wbr>Rate</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="videocontenthint.html#content_hint_details" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>DETAILS</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="videocontenthint.html#content_hint_motion" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>MOTION</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="videocontenthint.html#content_hint_none" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>NONE</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sentbitrate" class="tsd-anchor"></a>
-					<h3>sent<wbr>Bitrate</h3>
-					<div class="tsd-signature tsd-kind-icon">sent<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="content_hint_details" class="tsd-anchor"></a>
+					<h3>CONTENT_<wbr>HINT_<wbr>DETAILS</h3>
+					<div class="tsd-signature tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>DETAILS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L159">Api/native_type.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L320">Api/native_type.ts:320</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="sentframerate" class="tsd-anchor"></a>
-					<h3>sent<wbr>Frame<wbr>Rate</h3>
-					<div class="tsd-signature tsd-kind-icon">sent<wbr>Frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="content_hint_motion" class="tsd-anchor"></a>
+					<h3>CONTENT_<wbr>HINT_<wbr>MOTION</h3>
+					<div class="tsd-signature tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>MOTION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L160">Api/native_type.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L319">Api/native_type.ts:319</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="content_hint_none" class="tsd-anchor"></a>
+					<h3>CONTENT_<wbr>HINT_<wbr>NONE</h3>
+					<div class="tsd-signature tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L318">Api/native_type.ts:318</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,99 +125,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="../enums/video_profile_type.html" class="tsd-kind-icon">VIDEO_<wbr>PROFILE_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/agorartcengine.html" class="tsd-kind-icon">Agora<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
-						<a href="../classes/glrenderer.html" class="tsd-kind-icon">Gl<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/renderer.html" class="tsd-kind-icon">Renderer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="irenderer.html" class="tsd-kind-icon">IRenderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="injectstreamconfig.html" class="tsd-kind-icon">Inject<wbr>Stream<wbr>Config</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="localvideostats.html" class="tsd-kind-icon">Local<wbr>Video<wbr>Stats</a>
+					<li class="current tsd-kind-enum">
+						<a href="videocontenthint.html" class="tsd-kind-icon">Video<wbr>Content<wbr>Hint</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="localvideostats.html#sentbitrate" class="tsd-kind-icon">sent<wbr>Bitrate</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="videocontenthint.html#content_hint_details" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>DETAILS</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="localvideostats.html#sentframerate" class="tsd-kind-icon">sent<wbr>Frame<wbr>Rate</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="videocontenthint.html#content_hint_motion" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>MOTION</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="videocontenthint.html#content_hint_none" class="tsd-kind-icon">CONTENT_<wbr>HINT_<wbr>NONE</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="nodertcengine.html" class="tsd-kind-icon">Node<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="remoteaudiostats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="remotevideostats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="rtcstats.html" class="tsd-kind-icon">Rtc<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodingconfig.html" class="tsd-kind-icon">Transcoding<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodinguser.html" class="tsd-kind-icon">Transcoding<wbr>User</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#agoranetworkquality" class="tsd-kind-icon">Agora<wbr>Network<wbr>Quality</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#clientroletype" class="tsd-kind-icon">Client<wbr>Role<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionchangereason" class="tsd-kind-icon">Connection<wbr>Change<wbr>Reason</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionstate" class="tsd-kind-icon">Connection<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#mediadevicetype" class="tsd-kind-icon">Media<wbr>Device<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#remotevideostate" class="tsd-kind-icon">Remote<wbr>Video<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#streamtype" class="tsd-kind-icon">Stream<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvbuffer" class="tsd-kind-icon">YUVBuffer</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvcanvas" class="tsd-kind-icon">YUVCanvas</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../index.html#agora" class="tsd-kind-icon">agora</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#createprogramfromsources" class="tsd-kind-icon">create<wbr>Program<wbr>From<wbr>Sources</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../index.html#agorarender" class="tsd-kind-icon">Agora<wbr>Render</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

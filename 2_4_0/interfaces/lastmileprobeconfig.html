@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RemoteAudioStats | Agora-Electron-SDK</title>
+	<title>LastmileProbeConfig | Agora-Electron-SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="remoteaudiostats.html">RemoteAudioStats</a>
+					<a href="lastmileprobeconfig.html">LastmileProbeConfig</a>
 				</li>
 			</ul>
-			<h1>Interface RemoteAudioStats</h1>
+			<h1>Interface LastmileProbeConfig</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RemoteAudioStats</span>
+						<span class="target">LastmileProbeConfig</span>
 					</li>
 				</ul>
 			</section>
@@ -81,11 +81,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remoteaudiostats.html#audiolossrate" class="tsd-kind-icon">audio<wbr>Loss<wbr>Rate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remoteaudiostats.html#jitterbufferdelay" class="tsd-kind-icon">jitter<wbr>Buffer<wbr>Delay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remoteaudiostats.html#networktransportdelay" class="tsd-kind-icon">network<wbr>Transport<wbr>Delay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remoteaudiostats.html#quality" class="tsd-kind-icon">quality</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remoteaudiostats.html#uid" class="tsd-kind-icon">uid</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="lastmileprobeconfig.html#expecteddownlinkbitrate" class="tsd-kind-icon">expected<wbr>Downlink<wbr>Bitrate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="lastmileprobeconfig.html#expecteduplinkbitrate" class="tsd-kind-icon">expected<wbr>Uplink<wbr>Bitrate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="lastmileprobeconfig.html#probedownlink" class="tsd-kind-icon">probe<wbr>Downlink</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="lastmileprobeconfig.html#probeuplink" class="tsd-kind-icon">probe<wbr>Uplink</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,79 +93,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="audiolossrate" class="tsd-anchor"></a>
-					<h3>audio<wbr>Loss<wbr>Rate</h3>
-					<div class="tsd-signature tsd-kind-icon">audio<wbr>Loss<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="expecteddownlinkbitrate" class="tsd-anchor"></a>
+					<h3>expected<wbr>Downlink<wbr>Bitrate</h3>
+					<div class="tsd-signature tsd-kind-icon">expected<wbr>Downlink<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L186">Api/native_type.ts:186</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L115">Api/native_type.ts:115</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Packet loss rate in the reported interval.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="jitterbufferdelay" class="tsd-anchor"></a>
-					<h3>jitter<wbr>Buffer<wbr>Delay</h3>
-					<div class="tsd-signature tsd-kind-icon">jitter<wbr>Buffer<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="expecteduplinkbitrate" class="tsd-anchor"></a>
+					<h3>expected<wbr>Uplink<wbr>Bitrate</h3>
+					<div class="tsd-signature tsd-kind-icon">expected<wbr>Uplink<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L184">Api/native_type.ts:184</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L114">Api/native_type.ts:114</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Jitter buffer delay at the receiver.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="networktransportdelay" class="tsd-anchor"></a>
-					<h3>network<wbr>Transport<wbr>Delay</h3>
-					<div class="tsd-signature tsd-kind-icon">network<wbr>Transport<wbr>Delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="probedownlink" class="tsd-anchor"></a>
+					<h3>probe<wbr>Downlink</h3>
+					<div class="tsd-signature tsd-kind-icon">probe<wbr>Downlink<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L182">Api/native_type.ts:182</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L113">Api/native_type.ts:113</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Network delay from the sender to the receiver.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="quality" class="tsd-anchor"></a>
-					<h3>quality</h3>
-					<div class="tsd-signature tsd-kind-icon">quality<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="probeuplink" class="tsd-anchor"></a>
+					<h3>probe<wbr>Uplink</h3>
+					<div class="tsd-signature tsd-kind-icon">probe<wbr>Uplink<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L180">Api/native_type.ts:180</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L112">Api/native_type.ts:112</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Audio quality received by the user: #QUALITY_TYPE.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="uid" class="tsd-anchor"></a>
-					<h3>uid</h3>
-					<div class="tsd-signature tsd-kind-icon">uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Api/native_type.ts#L178">Api/native_type.ts:178</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>User ID of the remote user sending the audio streams.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -180,108 +144,27 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="../enums/video_profile_type.html" class="tsd-kind-icon">VIDEO_<wbr>PROFILE_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/agorartcengine.html" class="tsd-kind-icon">Agora<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
-						<a href="../classes/glrenderer.html" class="tsd-kind-icon">Gl<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/renderer.html" class="tsd-kind-icon">Renderer</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="irenderer.html" class="tsd-kind-icon">IRenderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="injectstreamconfig.html" class="tsd-kind-icon">Inject<wbr>Stream<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="localvideostats.html" class="tsd-kind-icon">Local<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="nodertcengine.html" class="tsd-kind-icon">Node<wbr>Rtc<wbr>Engine</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="remoteaudiostats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Stats</a>
+						<a href="lastmileprobeconfig.html" class="tsd-kind-icon">Lastmile<wbr>Probe<wbr>Config</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remoteaudiostats.html#audiolossrate" class="tsd-kind-icon">audio<wbr>Loss<wbr>Rate</a>
+								<a href="lastmileprobeconfig.html#expecteddownlinkbitrate" class="tsd-kind-icon">expected<wbr>Downlink<wbr>Bitrate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remoteaudiostats.html#jitterbufferdelay" class="tsd-kind-icon">jitter<wbr>Buffer<wbr>Delay</a>
+								<a href="lastmileprobeconfig.html#expecteduplinkbitrate" class="tsd-kind-icon">expected<wbr>Uplink<wbr>Bitrate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remoteaudiostats.html#networktransportdelay" class="tsd-kind-icon">network<wbr>Transport<wbr>Delay</a>
+								<a href="lastmileprobeconfig.html#probedownlink" class="tsd-kind-icon">probe<wbr>Downlink</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remoteaudiostats.html#quality" class="tsd-kind-icon">quality</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remoteaudiostats.html#uid" class="tsd-kind-icon">uid</a>
+								<a href="lastmileprobeconfig.html#probeuplink" class="tsd-kind-icon">probe<wbr>Uplink</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="remotevideostats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="rtcstats.html" class="tsd-kind-icon">Rtc<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodingconfig.html" class="tsd-kind-icon">Transcoding<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodinguser.html" class="tsd-kind-icon">Transcoding<wbr>User</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#agoranetworkquality" class="tsd-kind-icon">Agora<wbr>Network<wbr>Quality</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#clientroletype" class="tsd-kind-icon">Client<wbr>Role<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionchangereason" class="tsd-kind-icon">Connection<wbr>Change<wbr>Reason</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionstate" class="tsd-kind-icon">Connection<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#mediadevicetype" class="tsd-kind-icon">Media<wbr>Device<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#remotevideostate" class="tsd-kind-icon">Remote<wbr>Video<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#streamtype" class="tsd-kind-icon">Stream<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvbuffer" class="tsd-kind-icon">YUVBuffer</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvcanvas" class="tsd-kind-icon">YUVCanvas</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../index.html#agora" class="tsd-kind-icon">agora</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#createprogramfromsources" class="tsd-kind-icon">create<wbr>Program<wbr>From<wbr>Sources</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../index.html#agorarender" class="tsd-kind-icon">Agora<wbr>Render</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

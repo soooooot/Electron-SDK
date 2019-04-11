@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CaptureOutPreference | Agora-Electron-SDK</title>
+	<title>AualityAdaptIndication | Agora-Electron-SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="captureoutpreference.html">CaptureOutPreference</a>
+					<a href="aualityadaptindication.html">AualityAdaptIndication</a>
 				</li>
 			</ul>
-			<h1>Enumeration CaptureOutPreference</h1>
+			<h1>Enumeration AualityAdaptIndication</h1>
 		</div>
 	</div>
 </header>
@@ -73,9 +73,9 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="captureoutpreference.html#capturer_output_preference_auto" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>AUTO</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="captureoutpreference.html#capturer_output_preference_performance" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PERFORMANCE</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="captureoutpreference.html#capturer_output_preference_preview" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PREVIEW</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="aualityadaptindication.html#adapt_down_bandwidth" class="tsd-kind-icon">ADAPT_<wbr>DOWN_<wbr>BANDWIDTH</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="aualityadaptindication.html#adapt_none" class="tsd-kind-icon">ADAPT_<wbr>NONE</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="aualityadaptindication.html#adapt_up_bandwidth" class="tsd-kind-icon">ADAPT_<wbr>UP_<wbr>BANDWIDTH</a></li>
 							</ul>
 						</section>
 					</div>
@@ -84,47 +84,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="capturer_output_preference_auto" class="tsd-anchor"></a>
-					<h3>CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>AUTO</h3>
-					<div class="tsd-signature tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>AUTO<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<a name="adapt_down_bandwidth" class="tsd-anchor"></a>
+					<h3>ADAPT_<wbr>DOWN_<wbr>BANDWIDTH</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPT_<wbr>DOWN_<wbr>BANDWIDTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L230">Api/native_type.ts:230</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L228">Api/native_type.ts:228</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>0: (Default) self-adapts the camera output parameters to the system performance and network conditions to balance CPU consumption and video preview quality.</p>
+							<p>The quality worsens because the network bandwidth decreases.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="capturer_output_preference_performance" class="tsd-anchor"></a>
-					<h3>CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PERFORMANCE</h3>
-					<div class="tsd-signature tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PERFORMANCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
+					<a name="adapt_none" class="tsd-anchor"></a>
+					<h3>ADAPT_<wbr>NONE</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPT_<wbr>NONE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L233">Api/native_type.ts:233</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L224">Api/native_type.ts:224</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>2: Prioritizes the system performance. The SDK chooses the dimension and frame rate of the local camera capture closest to those set by \ref IRtcEngine::setVideoEncoderConfiguration &quot;setVideoEncoderConfiguration&quot;.</p>
+							<p>The quality of the local video stays the same.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="capturer_output_preference_preview" class="tsd-anchor"></a>
-					<h3>CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PREVIEW</h3>
-					<div class="tsd-signature tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PREVIEW<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<a name="adapt_up_bandwidth" class="tsd-anchor"></a>
+					<h3>ADAPT_<wbr>UP_<wbr>BANDWIDTH</h3>
+					<div class="tsd-signature tsd-kind-icon">ADAPT_<wbr>UP_<wbr>BANDWIDTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L236">Api/native_type.ts:236</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L226">Api/native_type.ts:226</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>2: Prioritizes the local preview quality. The SDK chooses higher camera output parameters to improve the local video preview quality. This option requires extra CPU and RAM usage for video pre-processing.</p>
+							<p>The quality improves because the network bandwidth increases.</p>
 						</div>
 					</div>
 				</section>
@@ -140,120 +140,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="audioreverbpreset.html" class="tsd-kind-icon">Audio<wbr>Reverb<wbr>Preset</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum">
-						<a href="captureoutpreference.html" class="tsd-kind-icon">Capture<wbr>Out<wbr>Preference</a>
+						<a href="aualityadaptindication.html" class="tsd-kind-icon">Auality<wbr>Adapt<wbr>Indication</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="captureoutpreference.html#capturer_output_preference_auto" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>AUTO</a>
+								<a href="aualityadaptindication.html#adapt_down_bandwidth" class="tsd-kind-icon">ADAPT_<wbr>DOWN_<wbr>BANDWIDTH</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="captureoutpreference.html#capturer_output_preference_performance" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PERFORMANCE</a>
+								<a href="aualityadaptindication.html#adapt_none" class="tsd-kind-icon">ADAPT_<wbr>NONE</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="captureoutpreference.html#capturer_output_preference_preview" class="tsd-kind-icon">CAPTURER_<wbr>OUTPUT_<wbr>PREFERENCE_<wbr>PREVIEW</a>
+								<a href="aualityadaptindication.html#adapt_up_bandwidth" class="tsd-kind-icon">ADAPT_<wbr>UP_<wbr>BANDWIDTH</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum">
-						<a href="priority.html" class="tsd-kind-icon">Priority</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="video_profile_type.html" class="tsd-kind-icon">VIDEO_<wbr>PROFILE_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="voicechangerpreset.html" class="tsd-kind-icon">Voice<wbr>Changer<wbr>Preset</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/agorartcengine.html" class="tsd-kind-icon">Agora<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
-						<a href="../classes/glrenderer.html" class="tsd-kind-icon">Gl<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/renderer.html" class="tsd-kind-icon">Renderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/cameracapturerconfiguration.html" class="tsd-kind-icon">Camera<wbr>Capturer<wbr>Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="../interfaces/irenderer.html" class="tsd-kind-icon">IRenderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/injectstreamconfig.html" class="tsd-kind-icon">Inject<wbr>Stream<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/lastmileprobeconfig.html" class="tsd-kind-icon">Lastmile<wbr>Probe<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/localvideostats.html" class="tsd-kind-icon">Local<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/nodertcengine.html" class="tsd-kind-icon">Node<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/remoteaudiostats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/remotevideostats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/rtcstats.html" class="tsd-kind-icon">Rtc<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/transcodingconfig.html" class="tsd-kind-icon">Transcoding<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/transcodinguser.html" class="tsd-kind-icon">Transcoding<wbr>User</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#agoranetworkquality" class="tsd-kind-icon">Agora<wbr>Network<wbr>Quality</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#clientroletype" class="tsd-kind-icon">Client<wbr>Role<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionchangereason" class="tsd-kind-icon">Connection<wbr>Change<wbr>Reason</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionstate" class="tsd-kind-icon">Connection<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#mediadevicetype" class="tsd-kind-icon">Media<wbr>Device<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#remotevideostate" class="tsd-kind-icon">Remote<wbr>Video<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#streamtype" class="tsd-kind-icon">Stream<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvbuffer" class="tsd-kind-icon">YUVBuffer</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvcanvas" class="tsd-kind-icon">YUVCanvas</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../index.html#agora" class="tsd-kind-icon">agora</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#createprogramfromsources" class="tsd-kind-icon">create<wbr>Program<wbr>From<wbr>Sources</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../index.html#agorarender" class="tsd-kind-icon">Agora<wbr>Render</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

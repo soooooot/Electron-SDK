@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>RemoteVideoStats | Agora-Electron-SDK</title>
+	<title>VideoEncoderConfiguration | Agora-Electron-SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="remotevideostats.html">RemoteVideoStats</a>
+					<a href="videoencoderconfiguration.html">VideoEncoderConfiguration</a>
 				</li>
 			</ul>
-			<h1>Interface RemoteVideoStats</h1>
+			<h1>Interface VideoEncoderConfiguration</h1>
 		</div>
 	</div>
 </header>
@@ -70,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">RemoteVideoStats</span>
+						<span class="target">VideoEncoderConfiguration</span>
 					</li>
 				</ul>
 			</section>
@@ -81,13 +81,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#delay" class="tsd-kind-icon">delay</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#height" class="tsd-kind-icon">height</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#receivedbitrate" class="tsd-kind-icon">received<wbr>Bitrate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#receivedframerate" class="tsd-kind-icon">received<wbr>Frame<wbr>Rate</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#rxstreamtype" class="tsd-kind-icon">rx<wbr>Stream<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#uid" class="tsd-kind-icon">uid</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideostats.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#bitrate" class="tsd-kind-icon">bitrate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#degradationpreference" class="tsd-kind-icon">degradation<wbr>Preference</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#framerate" class="tsd-kind-icon">frame<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#minbitrate" class="tsd-kind-icon">min<wbr>Bitrate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#minframerate" class="tsd-kind-icon">min<wbr>Frame<wbr>Rate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#orientationmode" class="tsd-kind-icon">orientation<wbr>Mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="videoencoderconfiguration.html#width" class="tsd-kind-icon">width</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,12 +97,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delay" class="tsd-anchor"></a>
-					<h3>delay</h3>
-					<div class="tsd-signature tsd-kind-icon">delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="bitrate" class="tsd-anchor"></a>
+					<h3>bitrate</h3>
+					<div class="tsd-signature tsd-kind-icon">bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L216">Api/native_type.ts:216</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L244">Api/native_type.ts:244</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="degradationpreference" class="tsd-anchor"></a>
+					<h3>degradation<wbr>Preference</h3>
+					<div class="tsd-signature tsd-kind-icon">degradation<wbr>Preference<span class="tsd-signature-symbol">:</span> <a href="../enums/degradationpreference.html" class="tsd-signature-type">DegradationPreference</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L247">Api/native_type.ts:247</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="framerate" class="tsd-anchor"></a>
+					<h3>frame<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L242">Api/native_type.ts:242</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -111,52 +132,37 @@
 					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L218">Api/native_type.ts:218</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L241">Api/native_type.ts:241</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="receivedbitrate" class="tsd-anchor"></a>
-					<h3>received<wbr>Bitrate</h3>
-					<div class="tsd-signature tsd-kind-icon">received<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="minbitrate" class="tsd-anchor"></a>
+					<h3>min<wbr>Bitrate</h3>
+					<div class="tsd-signature tsd-kind-icon">min<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L219">Api/native_type.ts:219</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L245">Api/native_type.ts:245</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="receivedframerate" class="tsd-anchor"></a>
-					<h3>received<wbr>Frame<wbr>Rate</h3>
-					<div class="tsd-signature tsd-kind-icon">received<wbr>Frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="minframerate" class="tsd-anchor"></a>
+					<h3>min<wbr>Frame<wbr>Rate</h3>
+					<div class="tsd-signature tsd-kind-icon">min<wbr>Frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L220">Api/native_type.ts:220</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L243">Api/native_type.ts:243</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="rxstreamtype" class="tsd-anchor"></a>
-					<h3>rx<wbr>Stream<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">rx<wbr>Stream<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../index.html#streamtype" class="tsd-signature-type">StreamType</a></div>
+					<a name="orientationmode" class="tsd-anchor"></a>
+					<h3>orientation<wbr>Mode</h3>
+					<div class="tsd-signature tsd-kind-icon">orientation<wbr>Mode<span class="tsd-signature-symbol">:</span> <a href="../enums/orientationmode.html" class="tsd-signature-type">OrientationMode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L224">Api/native_type.ts:224</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>0 for high stream and 1 for low stream</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="uid" class="tsd-anchor"></a>
-					<h3>uid</h3>
-					<div class="tsd-signature tsd-kind-icon">uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L215">Api/native_type.ts:215</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L246">Api/native_type.ts:246</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -166,7 +172,7 @@
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/cb0433e/ts/Api/native_type.ts#L217">Api/native_type.ts:217</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/45006aa/ts/Api/native_type.ts#L240">Api/native_type.ts:240</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,132 +188,39 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="../enums/audioreverbpreset.html" class="tsd-kind-icon">Audio<wbr>Reverb<wbr>Preset</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/captureoutpreference.html" class="tsd-kind-icon">Capture<wbr>Out<wbr>Preference</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/priority.html" class="tsd-kind-icon">Priority</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/video_profile_type.html" class="tsd-kind-icon">VIDEO_<wbr>PROFILE_<wbr>TYPE</a>
-					</li>
-					<li class=" tsd-kind-enum">
-						<a href="../enums/voicechangerpreset.html" class="tsd-kind-icon">Voice<wbr>Changer<wbr>Preset</a>
-					</li>
-					<li class=" tsd-kind-class">
-						<a href="../classes/agorartcengine.html" class="tsd-kind-icon">Agora<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
-						<a href="../classes/glrenderer.html" class="tsd-kind-icon">Gl<wbr>Renderer</a>
-					</li>
-					<li class=" tsd-kind-class tsd-is-external">
-						<a href="../classes/renderer.html" class="tsd-kind-icon">Renderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="cameracapturerconfiguration.html" class="tsd-kind-icon">Camera<wbr>Capturer<wbr>Configuration</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-is-not-exported">
-						<a href="irenderer.html" class="tsd-kind-icon">IRenderer</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="injectstreamconfig.html" class="tsd-kind-icon">Inject<wbr>Stream<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="lastmileprobeconfig.html" class="tsd-kind-icon">Lastmile<wbr>Probe<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="localvideostats.html" class="tsd-kind-icon">Local<wbr>Video<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="nodertcengine.html" class="tsd-kind-icon">Node<wbr>Rtc<wbr>Engine</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="remoteaudiostats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Stats</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="remotevideostats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Stats</a>
+						<a href="videoencoderconfiguration.html" class="tsd-kind-icon">Video<wbr>Encoder<wbr>Configuration</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#delay" class="tsd-kind-icon">delay</a>
+								<a href="videoencoderconfiguration.html#bitrate" class="tsd-kind-icon">bitrate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#height" class="tsd-kind-icon">height</a>
+								<a href="videoencoderconfiguration.html#degradationpreference" class="tsd-kind-icon">degradation<wbr>Preference</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#receivedbitrate" class="tsd-kind-icon">received<wbr>Bitrate</a>
+								<a href="videoencoderconfiguration.html#framerate" class="tsd-kind-icon">frame<wbr>Rate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#receivedframerate" class="tsd-kind-icon">received<wbr>Frame<wbr>Rate</a>
+								<a href="videoencoderconfiguration.html#height" class="tsd-kind-icon">height</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#rxstreamtype" class="tsd-kind-icon">rx<wbr>Stream<wbr>Type</a>
+								<a href="videoencoderconfiguration.html#minbitrate" class="tsd-kind-icon">min<wbr>Bitrate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#uid" class="tsd-kind-icon">uid</a>
+								<a href="videoencoderconfiguration.html#minframerate" class="tsd-kind-icon">min<wbr>Frame<wbr>Rate</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="remotevideostats.html#width" class="tsd-kind-icon">width</a>
+								<a href="videoencoderconfiguration.html#orientationmode" class="tsd-kind-icon">orientation<wbr>Mode</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="videoencoderconfiguration.html#width" class="tsd-kind-icon">width</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="rtcstats.html" class="tsd-kind-icon">Rtc<wbr>Stats</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodingconfig.html" class="tsd-kind-icon">Transcoding<wbr>Config</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="transcodinguser.html" class="tsd-kind-icon">Transcoding<wbr>User</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#agoranetworkquality" class="tsd-kind-icon">Agora<wbr>Network<wbr>Quality</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#clientroletype" class="tsd-kind-icon">Client<wbr>Role<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionchangereason" class="tsd-kind-icon">Connection<wbr>Change<wbr>Reason</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#connectionstate" class="tsd-kind-icon">Connection<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#mediadevicetype" class="tsd-kind-icon">Media<wbr>Device<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#remotevideostate" class="tsd-kind-icon">Remote<wbr>Video<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="../index.html#streamtype" class="tsd-kind-icon">Stream<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#eventemitter" class="tsd-kind-icon">Event<wbr>Emitter</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvbuffer" class="tsd-kind-icon">YUVBuffer</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#yuvcanvas" class="tsd-kind-icon">YUVCanvas</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="../index.html#agora" class="tsd-kind-icon">agora</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#createprogramfromsources" class="tsd-kind-icon">create<wbr>Program<wbr>From<wbr>Sources</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-is-external tsd-is-not-exported">
-						<a href="../index.html#isequal" class="tsd-kind-icon">is<wbr>Equal</a>
-					</li>
-					<li class=" tsd-kind-function tsd-is-external">
-						<a href="../index.html#agorarender" class="tsd-kind-icon">Agora<wbr>Render</a>
-					</li>
 				</ul>
 			</nav>
 		</div>
