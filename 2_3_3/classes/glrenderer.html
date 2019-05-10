@@ -93,6 +93,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#event" class="tsd-kind-icon">event</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#self" class="tsd-kind-icon">self</a></li>
 							</ul>
 						</section>
@@ -101,6 +102,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#bind" class="tsd-kind-icon">bind</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#drawframe" class="tsd-kind-icon">draw<wbr>Frame</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#refreshcanvas" class="tsd-kind-icon">refresh<wbr>Canvas</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#setcontentmode" class="tsd-kind-icon">set<wbr>Content<wbr>Mode</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="glrenderer.html#unbind" class="tsd-kind-icon">unbind</a></li>
 							</ul>
@@ -120,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L17">Renderer/index.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L21">Renderer/index.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="glrenderer.html" class="tsd-signature-type">GlRenderer</a></h4>
@@ -131,12 +133,23 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="event" class="tsd-anchor"></a>
+					<h3>event</h3>
+					<div class="tsd-signature tsd-kind-icon">event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventEmitter</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/irenderer.html">IRenderer</a>.<a href="../interfaces/irenderer.html#event">event</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L21">Renderer/index.ts:21</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="self" class="tsd-anchor"></a>
 					<h3>self</h3>
 					<div class="tsd-signature tsd-kind-icon">self<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L17">Renderer/index.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L20">Renderer/index.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -147,20 +160,20 @@
 					<a name="bind" class="tsd-anchor"></a>
 					<h3>bind</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">bind<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">bind<span class="tsd-signature-symbol">(</span>element<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/irenderer.html">IRenderer</a>.<a href="../interfaces/irenderer.html#bind">bind</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L21">Renderer/index.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L26">Renderer/index.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>element: <span class="tsd-signature-type">HTMLElement</span></h5>
+									<h5>element: <span class="tsd-signature-type">Element</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -177,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L27">Renderer/index.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L32">Renderer/index.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -205,6 +218,24 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="refreshcanvas" class="tsd-anchor"></a>
+					<h3>refresh<wbr>Canvas</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">refresh<wbr>Canvas<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/irenderer.html">IRenderer</a>.<a href="../interfaces/irenderer.html#refreshcanvas">refreshCanvas</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L43">Renderer/index.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="setcontentmode" class="tsd-anchor"></a>
 					<h3>set<wbr>Content<wbr>Mode</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -215,7 +246,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/irenderer.html">IRenderer</a>.<a href="../interfaces/irenderer.html#setcontentmode">setContentMode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L35">Renderer/index.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L40">Renderer/index.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -239,7 +270,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/irenderer.html">IRenderer</a>.<a href="../interfaces/irenderer.html#unbind">unbind</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4af3258/ts/Renderer/index.ts#L24">Renderer/index.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/4aeedb4/ts/Renderer/index.ts#L29">Renderer/index.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -273,6 +304,9 @@
 								<a href="glrenderer.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="glrenderer.html#event" class="tsd-kind-icon">event</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="glrenderer.html#self" class="tsd-kind-icon">self</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
@@ -280,6 +314,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="glrenderer.html#drawframe" class="tsd-kind-icon">draw<wbr>Frame</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="glrenderer.html#refreshcanvas" class="tsd-kind-icon">refresh<wbr>Canvas</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="glrenderer.html#setcontentmode" class="tsd-kind-icon">set<wbr>Content<wbr>Mode</a>
@@ -310,7 +347,13 @@
 						<a href="../interfaces/remoteaudiostats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Stats</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/remoteaudiotransportstats.html" class="tsd-kind-icon">Remote<wbr>Audio<wbr>Transport<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/remotevideostats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Stats</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/remotevideotransportstats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Transport<wbr>Stats</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/rtcstats.html" class="tsd-kind-icon">Rtc<wbr>Stats</a>

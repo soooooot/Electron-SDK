@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LocalVideoStats | Agora-Electron-SDK</title>
+	<title>RemoteVideoTransportStats | Agora-Electron-SDK</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -910,22 +910,19 @@ img { max-width: 100%; }
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class="current tsd-kind-interface">
-			<a href="localvideostats.html" class="tsd-kind-icon">Local<wbr>Video<wbr>Stats</a>
+			<a href="remotevideotransportstats.html" class="tsd-kind-icon">Remote<wbr>Video<wbr>Transport<wbr>Stats</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="localvideostats.html#qualityadaptindication" class="tsd-kind-icon">quality<wbr>Adapt<wbr>Indication</a>
+					<a href="remotevideotransportstats.html#delay" class="tsd-kind-icon">delay</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="localvideostats.html#sentbitrate" class="tsd-kind-icon">sent<wbr>Bitrate</a>
+					<a href="remotevideotransportstats.html#lost" class="tsd-kind-icon">lost</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="localvideostats.html#sentframerate" class="tsd-kind-icon">sent<wbr>Frame<wbr>Rate</a>
+					<a href="remotevideotransportstats.html#rxkbitrate" class="tsd-kind-icon">rxKBit<wbr>Rate</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="localvideostats.html#targetbitrate" class="tsd-kind-icon">target<wbr>Bitrate</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="localvideostats.html#targetframerate" class="tsd-kind-icon">target<wbr>Frame<wbr>Rate</a>
+					<a href="remotevideotransportstats.html#uid" class="tsd-kind-icon">uid</a>
 				</li>
 			</ul>
 		</li>
@@ -937,7 +934,7 @@ img { max-width: 100%; }
 			<h3>Hierarchy</h3>
 			<ul class="tsd-hierarchy">
 				<li>
-					<span class="target">LocalVideoStats</span>
+					<span class="target">RemoteVideoTransportStats</span>
 				</li>
 			</ul>
 		</section>
@@ -948,11 +945,10 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#qualityadaptindication" class="tsd-kind-icon">quality<wbr>Adapt<wbr>Indication</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#sentbitrate" class="tsd-kind-icon">sent<wbr>Bitrate</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#sentframerate" class="tsd-kind-icon">sent<wbr>Frame<wbr>Rate</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#targetbitrate" class="tsd-kind-icon">target<wbr>Bitrate</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="localvideostats.html#targetframerate" class="tsd-kind-icon">target<wbr>Frame<wbr>Rate</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideotransportstats.html#delay" class="tsd-kind-icon">delay</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideotransportstats.html#lost" class="tsd-kind-icon">lost</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideotransportstats.html#rxkbitrate" class="tsd-kind-icon">rxKBit<wbr>Rate</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="remotevideotransportstats.html#uid" class="tsd-kind-icon">uid</a></li>
 						</ul>
 					</section>
 				</div>
@@ -961,52 +957,42 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="qualityadaptindication" class="tsd-anchor"></a>
-				<h3>quality<wbr>Adapt<wbr>Indication</h3>
-				<div class="tsd-signature tsd-kind-icon">quality<wbr>Adapt<wbr>Indication<span class="tsd-signature-symbol">:</span> <a href="../enums/aualityadaptindication.html" class="tsd-signature-type">AualityAdaptIndication</a></div>
+				<a name="delay" class="tsd-anchor"></a>
+				<h3>delay</h3>
+				<div class="tsd-signature tsd-kind-icon">delay<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L236">Api/native_type.ts:236</a></li>
+						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L325">Api/native_type.ts:325</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="sentbitrate" class="tsd-anchor"></a>
-				<h3>sent<wbr>Bitrate</h3>
-				<div class="tsd-signature tsd-kind-icon">sent<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<a name="lost" class="tsd-anchor"></a>
+				<h3>lost</h3>
+				<div class="tsd-signature tsd-kind-icon">lost<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L232">Api/native_type.ts:232</a></li>
+						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L326">Api/native_type.ts:326</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="sentframerate" class="tsd-anchor"></a>
-				<h3>sent<wbr>Frame<wbr>Rate</h3>
-				<div class="tsd-signature tsd-kind-icon">sent<wbr>Frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<a name="rxkbitrate" class="tsd-anchor"></a>
+				<h3>rxKBit<wbr>Rate</h3>
+				<div class="tsd-signature tsd-kind-icon">rxKBit<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L233">Api/native_type.ts:233</a></li>
+						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L327">Api/native_type.ts:327</a></li>
 					</ul>
 				</aside>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="targetbitrate" class="tsd-anchor"></a>
-				<h3>target<wbr>Bitrate</h3>
-				<div class="tsd-signature tsd-kind-icon">target<wbr>Bitrate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<a name="uid" class="tsd-anchor"></a>
+				<h3>uid</h3>
+				<div class="tsd-signature tsd-kind-icon">uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L234">Api/native_type.ts:234</a></li>
-					</ul>
-				</aside>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="targetframerate" class="tsd-anchor"></a>
-				<h3>target<wbr>Frame<wbr>Rate</h3>
-				<div class="tsd-signature tsd-kind-icon">target<wbr>Frame<wbr>Rate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L235">Api/native_type.ts:235</a></li>
+						<li>Defined in <a href="https://github.com/AgoraIO-Community/Agora-RTC-SDK-for-Electron/blob/def1e46/ts/Api/native_type.ts#L324">Api/native_type.ts:324</a></li>
 					</ul>
 				</aside>
 			</section>
