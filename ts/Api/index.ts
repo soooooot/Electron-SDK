@@ -325,6 +325,8 @@ class AgoraRtcEngine extends EventEmitter {
     });
 
     this.rtcEngine.onEvent('useroffline', function(uid: number, reason: number) {
+      fire('useroffline', uid, reason);
+      fire('userOffline', uid, reason);
       if (!self.streams) {
         self.streams = new Map();
         console.log('Warning!!!!!!, streams is undefined.');
